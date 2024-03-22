@@ -1,0 +1,10 @@
+
+.row {
+  margin:auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .row{
+    margin: auto 47px;
+  }
+}

@@ -1,1 +1,18 @@
-<p>circle-timer works!</p>
+<div class="swiper">
+  <div class="swiper-color" [style.background-color]="colorChange"  #swiperColor></div>
+  <span (click)="moveSwiperColor(1)">T i m e r 2</span>
+  <span (click)="moveSwiperColor(2)">T i m e r 1</span>
+  <span (click)="moveSwiperColor(3)">T i m e r 3</span>
+</div>
+
+
+<div class="main">
+  <div class="main__same">
+    <div id="progress" #colorCircle>
+      <div class="main__midle" >
+        <span class="main__midle-time" >{{mainTimer}}</span>
+        <div class="main__midle-start">P A U S E</div>
+      </div>
+    </div>
+  </div>
+</div>
