@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SquareTimerComponent {
 
+  public hours: number = 0;
+  public minutes: number = 0;
+  public seconds: number = 0;
+
+
+
 }

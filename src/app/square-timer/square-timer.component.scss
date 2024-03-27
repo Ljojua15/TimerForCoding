@@ -30,6 +30,14 @@
       color: purple;
       background: none;
       cursor: pointer;
+      &:hover{
+        background-color: white;
+        transition: 0.6s;
+        transform: scale(0.9);
+      }
+      &:disabled{
+        opacity: 0.3;
+      }
     }
   }
 
@@ -75,7 +83,7 @@
   button {
     width: 45px;
     height: 41px;
-
+    border-radius: 5px;
     background: none;
     color: purple;
     font-size: 30px;
@@ -91,4 +99,25 @@
 
 .visible{
   display: none;
+}
+
+
+//animation
+
+.move{
+  animation: move_timer 1.3s infinite;
+}
+
+@keyframes move_timer {
+  20%,
+  50%,
+  80%{
+    transform: translateY(0px);
+  }
+  30%{
+    transform: translateY(-45px);
+  }
+  60%{
+    transform: translateY(-25px);
+  }
 }
