@@ -75,11 +75,18 @@
   button {
     width: 45px;
     height: 41px;
-    cursor: pointer;
+
     background: none;
     color: purple;
     font-size: 30px;
-  }}
+  }
+  :hover{
+    background-color: green;
+    transition: 0.5s;
+    transform: scale(0.8);
+    cursor: pointer;
+  }
+}
 
 
 .visible{
