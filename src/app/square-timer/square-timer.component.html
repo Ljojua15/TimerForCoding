@@ -1,8 +1,8 @@
-<div class="main">
+<div class="main"  [class.move] = "animate">
     <div class="main__timer">
         <div class="main__timer__h">
-            <div class="main__timer__h-time normal"> 00 <span>H</span> </div>
-            <div class="main__timer__h-btn btn-style">
+            <div class="main__timer__h-time normal"> {{hours}} <span>H</span> </div>
+            <div *ngIf="show" class="main__timer__h-btn btn-style" >
                 <button> + </button>
                 <button> - </button>
             </div>
