@@ -3,30 +3,30 @@
         <div class="main__timer__h">
             <div class="main__timer__h-time normal"> {{hours}} <span>H</span> </div>
             <div *ngIf="show" class="main__timer__h-btn btn-style" >
-                <button> + </button>
-                <button> - </button>
+                <button (click)="zrda('H')" > + </button>
+                <button (click)="kleba('H')" > - </button>
             </div>
         </div>
         <div class="main__timer__h">
-            <div class="main__timer__m-time normal"> 00 <span>M</span> </div>
-            <div class="main__timer__m-btn btn-style">
-                <button> + </button>
-                <button> - </button>
+            <div class="main__timer__m-time normal"> {{minutes}} <span>M</span> </div>
+            <div *ngIf="show" class="main__timer__m-btn btn-style">
+              <button (click)="zrda('M')"> + </button>
+                <button (click)="kleba('M')" > - </button>
             </div>
         </div>
         <div class="main__timer__h">
-            <div class="main__timer__s-time normal"> 00 <span>S</span> </div>
-            <div class="main__timer__s-btn btn-style">
-                <button> + </button>
-                <button> - </button>
+            <div class="main__timer__s-time normal"> {{seconds}}<span>S</span> </div>
+            <div *ngIf="show" class="main__timer__s-btn btn-style">
+                <button (click)="zrda('S')" > + </button>
+                <button (click)="kleba('S')" > - </button>
             </div>
         </div>
 
     </div>
   <div class="main__butt-act">
-    <button type="button">&#9658;</button>
-    <button type="button">&#9724;</button>
-    <button type="button">&#8635;</button>
+    <button type="button" (click)="start()" [disabled]="disabled"  >&#9658;</button>
+    <button type="button" (click)="stop()" >&#9724;</button>
+    <button type="button" (click)="reset()" >&#8635;</button>
   </div>
 
 
