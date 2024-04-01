@@ -12,7 +12,7 @@ export class CircleTimerComponent  {
   @ViewChild('colorCircle') colorCircle!: ElementRef;
 
   test = false
-  firstTimer:number =20
+  firstTimer:number =204
   secondTimer:number =10
   thirdTimer:number =30
 
